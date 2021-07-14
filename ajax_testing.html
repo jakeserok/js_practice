@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("button#1").click(function(){
+        //Cannot load external content error below
+        //$("#div1").load("demo_test.txt");
+        $("#div1").append("Maybe?");
+      });
+      $("button.one").click(function(){
+        $("#div2").prepend("Hello ");
+      });
+    });
+    </script>
+  </head>
+  <body>
+
+    <div id="div1"><h2>Let jQuery AJAX Change Text</h2></div>
+    <br>
+    <div id="div2">Some Text</div>
+
+    <button id="1">Append something</button>
+    <button class="one">Prepend something</button>
+    
+
+  </body>
+</html>
